@@ -316,7 +316,6 @@ length of the array (because that's the number of elements)
 4.3. Call the function with the 'totals' array
 
 GOOD LUCK �
-*/
 
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
@@ -344,3 +343,31 @@ const avarageBill = function (bills) {
 }
 
 console.log(avarageBill(bills));
+
+Coding Challenge #1
+Given an array of forecasted maximum temperatures, the thermometer displays a
+string with the given temperatures. Example: [17, 21, 23] will print "... 17ºC in 1
+days ... 21ºC in 2 days ... 23ºC in 3 days ..."
+Your tasks:
+1. Create a function 'printForecast' which takes in an array 'arr' and logs a
+string like the above to the console. Try it with both test datasets.
+
+2. Use the problem-solving framework: Understand the problem and break it up
+into sub-problems!
+
+Test data:
+§ Data 1: [17, 21, 23]
+§ Data 2: [12, 5, -5, 0, 4]
+
+GOOD LUCK �
+
+*/
+
+const printForecast = function (temps) {
+    for (let i = 0; i < temps.length; i++) {
+        console.log(`... ${temps[i]}ºC in ${i + 1} days.`)
+    }
+}
+
+printForecast([17, 21, 23]);
+printForecast([12, 5, -5, 0, 23]);
