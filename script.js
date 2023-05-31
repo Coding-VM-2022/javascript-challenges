@@ -750,8 +750,6 @@ Test data:
 Hints: Use tools from all lectures in this section so far �
 
 GOOD LUCK �
-
-*/
 const checkDogs = function (dogsJulia, dogsKate) {
     const finalDogsJulia = dogsJulia.slice(1, -1);
     const allDogs = [...dogsKate, ...finalDogsJulia];
@@ -763,3 +761,46 @@ const checkDogs = function (dogsJulia, dogsKate) {
 
 checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]);
 checkDogs([9, 16, 6, 8, 3], [10, 5, 6, 1, 4]);
+
+Challenge #15
+Let's go back to Julia and Kate's study about dogs. This time, they want to convert
+dog ages to human ages and calculate the average age of the dogs in their study.
+
+Your tasks:
+Create a function 'calcAverageHumanAge', which accepts an arrays of dog's
+ages ('ages'), and does the following things in order:
+1. Calculate the dog age in human years using the following formula: if the dog is
+<= 2 years old, humanAge = 2 * dogAge. If the dog is > 2 years old,
+humanAge = 16 + dogAge * 4
+
+2. Exclude all dogs that are less than 18 human years old (which is the same as
+keeping dogs that are at least 18 years old)
+
+3. Calculate the average human age of all adult dogs (you should already know
+from other challenges how we calculate averages �)
+
+4. Run the function for both test datasets
+
+Test data:
+§ Data 1: [5, 2, 4, 1, 15, 8, 3]
+§ Data 2: [16, 6, 10, 5, 6, 1, 4]
+
+GOOD LUCK �
+*/
+
+const calcAvarageHumanAge = function (ages) {
+    const adultDogs = [];
+    let adultDogsTotal = 0;
+    for (let i = 0; i < ages.length; i++) {
+        const humanAge = ages[i] <= 2 ? 2 * ages[i] : 16 + ages[i] * 4;
+        if (humanAge >= 18) {
+            adultDogs.push(ages[i]);
+            adultDogsTotal += ages[i];
+        }
+    }
+    console.log(`The avarage human age of the dogs is ${adultDogsTotal / adultDogs.length}`);
+}
+
+calcAvarageHumanAge([5, 2, 4, 1, 15, 8, 3]);
+calcAvarageHumanAge([16, 6, 10, 5, 6, 1, 4]);
+
