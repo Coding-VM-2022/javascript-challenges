@@ -377,8 +377,6 @@ next page). In this challenge we're gonna work with that data.
 Your tasks:
 
 GOOD LUCK �
-*/
-
 const game = {
     team1: 'Bayern Munich',
     team2: 'Borrussia Dortmund',
@@ -486,7 +484,6 @@ console.log(`${moreLikelyTeam} is more likely to win.`);
 // Test data for 6.: First, use players 'Davies', 'Muller', 'Lewandowski' and 'Kimmich'.
 //     Then, call the function again with players from game.scored
 
-/*
 Coding Challenge #2
 Let's continue with our football betting app! Keep using the 'game' variable from
 before.
@@ -504,7 +501,6 @@ game, it will look like this:
 
 GOOD LUCK �
 
-*/
 // 1. Loop over the game.scored array and print each player name to the console,
 //     along with the goal number(Example: "Goal 1: Lewandowski")
 for (let i = 0; i < game.score.length + 1; i++) {
@@ -533,4 +529,54 @@ console.log(gameOddsTotal / gameOdds.length);
 console.log(`Odd of victory ${game.team1}: ${game.odds.team1}`);
 console.log(`Odd of draw : ${game.odds.x}`);
 console.log(`Odd of victory ${game.team2}: ${game.odds.team2}`);
+
+Coding Challenge #3
+Let's continue with our football betting app! This time, we have a map called
+'gameEvents' (see below) with a log of the events that happened during the
+game. The values are the events themselves, and the keys are the minutes in which
+each event happened (a football game has 90 minutes plus some extra time).
+
+Your tasks:
+
+GOOD LUCK �
+*/
+
+const gameEvents = new Map([
+    [17, '⚽ GOAL'],
+    [36, '� Substitution'],
+    [47, '⚽ GOAL'],
+    [61, '� Substitution'],
+    [64, '� Yellow card'],
+    [69, '� Red card'],
+    [70, '� Substitution'],
+    [72, '� Substitution'],
+    [76, '⚽ GOAL'],
+    [80, '⚽ GOAL'],
+    [92, '� Yellow card'],
+]);
+
+// 1. Create an array 'events' of the different game events that happened (no duplicates)
+const events = [];
+for (const [time, event] of gameEvents) {
+    events.push(event)
+}
+
+console.log(...new Set(events));
+
+// 2. After the game has finished, is was found that the yellow card from minute 64
+// was unfair.So remove this event from the game events log.
+gameEvents.delete(64);
+
+// 3. Compute and log the following string to the console: "An event happened, on
+// average, every 9 minutes" (keep in mind that a game has 90 minutes)
+console.log(`An event happened on an avarage of ${Array.from(gameEvents.keys()).pop() / gameEvents.size}`);
+
+// 4. Loop over 'gameEvents' and log each element to the console, marking
+// whether it's in the first half or second half (after 45 min) of the game, like this:
+// [FIRST HALF]17: ⚽ GOAL
+for (const [time, event] of gameEvents) {
+    const half = time <= 45 ? "FIRST" : "SECOND";
+    console.log(`[${half}HALF] ${time} : ${event}`);
+}
+
 
