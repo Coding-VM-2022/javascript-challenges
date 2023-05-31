@@ -786,7 +786,6 @@ Test data:
 § Data 2: [16, 6, 10, 5, 6, 1, 4]
 
 GOOD LUCK �
-*/
 
 const calcAvarageHumanAge = function (ages) {
     const adultDogs = [];
@@ -801,6 +800,15 @@ const calcAvarageHumanAge = function (ages) {
     console.log(`The avarage human age of the dogs is ${adultDogsTotal / adultDogs.length}`);
 }
 
+
+*/
+const calcAvarageHumanAge = function (ages) {
+    const averageAge = ages
+        .map((age) => (age <= 2) ? 2 * age : 16 + age * 4)
+        .filter((age) => age >= 18)
+        .reduce(((acc, age, i, arr) => (acc + age), 0) / arr.length);
+
+    console.log(averageAge);
+}
 calcAvarageHumanAge([5, 2, 4, 1, 15, 8, 3]);
 calcAvarageHumanAge([16, 6, 10, 5, 6, 1, 4]);
-
