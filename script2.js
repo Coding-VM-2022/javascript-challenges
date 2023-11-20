@@ -46,10 +46,26 @@ if (dolphinsAvarage >= 100 && dolphinsAvarage > koalasAvarage){
 } else {
     console.log("Nobody wins")
 }
-*/
 
 // Challenge #4
 const bill = 400;
 const tip = (bill >= 50 && bill <=300 ? bill * .15  : bill * .2);
 console.log(tip);
+*/
 
+// Challenge #5
+const calcAvarage = (a,b,c) => (a+b+c) / 3;
+const dolphinsAvarage = calcAvarage(85, 54 ,41);
+const koalasAvarage = calcAvarage(23, 34 ,27);
+
+const checkWinner = function(){
+    if(dolphinsAvarage >= koalasAvarage * 2){
+        console.log(`Dolphins win (${dolphinsAvarage} vs. ${koalasAvarage})`);
+    }else if (koalasAvarage >= dolphinsAvarage*2){
+        console.log(`Koalas win (${koalasAvarage} vs. ${dolphinsAvarage})`);
+    } else {
+        console.log("Nobody wins")
+    }
+}
+
+checkWinner();
