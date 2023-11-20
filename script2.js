@@ -32,7 +32,6 @@ if (markBMI > johnBMI){
 } else if (markBMI < johnBMI){
     console.log(`John's BMI(${johnBMI}) is higher than Mark's(${markBMI})!"`)
 }
-*/
 
 // Challenge #3
 const dolphinsAvarage = (97+ 112 + 101) / 3;
@@ -47,3 +46,10 @@ if (dolphinsAvarage >= 100 && dolphinsAvarage > koalasAvarage){
 } else {
     console.log("Nobody wins")
 }
+*/
+
+// Challenge #4
+const bill = 400;
+const tip = (bill >= 50 && bill <=300 ? bill * .15  : bill * .2);
+console.log(tip);
+
