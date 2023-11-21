@@ -51,7 +51,6 @@ if (dolphinsAvarage >= 100 && dolphinsAvarage > koalasAvarage){
 const bill = 400;
 const tip = (bill >= 50 && bill <=300 ? bill * .15  : bill * .2);
 console.log(tip);
-*/
 
 // Challenge #5
 const calcAvarage = (a,b,c) => (a+b+c) / 3;
@@ -69,3 +68,22 @@ const checkWinner = function(){
 }
 
 checkWinner();
+*/
+
+// Challenge #6
+const calcTip = bill => (bill >= 50 && bill <= 300) ? bill * .15 : bill * .2;
+
+const bills = [125, 555, 44];
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i])
+    const total = bills[i] + tip;
+    tips.push(tip);
+    totals.push(total);
+}
+
+console.log(bills);
+console.log(tips);
+console.log(totals);
