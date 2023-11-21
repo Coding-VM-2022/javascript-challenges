@@ -68,7 +68,6 @@ const checkWinner = function(){
 }
 
 checkWinner();
-*/
 
 // Challenge #6
 const calcTip = bill => (bill >= 50 && bill <= 300) ? bill * .15 : bill * .2;
@@ -87,3 +86,30 @@ for (let i = 0; i < bills.length; i++) {
 console.log(bills);
 console.log(tips);
 console.log(totals);
+
+*/
+// Challenge #7
+const mark = {
+    fullname: "Mark Miller",
+    height: 1.69,
+    weight: 78,
+    calcBMI: function () {
+        this.BMI = this.weight / (this.height * this.height);
+        return this.BMI
+    }
+}
+
+const john = {
+    fullname: "John Smith",
+    height: 1.95,
+    weight: 92,
+    calcBMI: function () {
+        this.BMI = this.weight / (this.height * this.height);
+        return this.BMI
+    }
+}
+const johnBMI = john.calcBMI();
+const markBMI = mark.calcBMI();
+
+console.log(mark);
+console.log(john);
