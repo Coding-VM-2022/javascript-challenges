@@ -204,4 +204,4 @@ const { team1, x: draw, team2 } = game.odds;
 console.log(team1, draw, team2);
 
 
-console.log("Test commit")
+console.log("Commit test    ")
