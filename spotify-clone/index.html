@@ -1,14 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Clone</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <section class="side">Sidebar</section>
-    <section class="main">Main</section>
-    <section class="info">Info</section>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="app">
+      <div class="cover">
+        <div class="sidebar">
+          <nav class="sidenav">
+            <ul class="nav-items">
+              <li class="nav-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+
+                <span>Home</span>
+              </li>
+              <li class="nav-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+
+                <span>Search</span>
+              </li>
+            </ul>
+          </nav>
+          <div class="library">
+            <header class="library-header">
+              <div class="library-title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 3A1.5 1.5 0 0 0 1 4.5v4A1.5 1.5 0 0 0 2.5 10h6A1.5 1.5 0 0 0 10 8.5v-4A1.5 1.5 0 0 0 8.5 3h-6Zm11 2A1.5 1.5 0 0 0 12 6.5v7a1.5 1.5 0 0 0 1.5 1.5h4a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 17.5 5h-4Zm-10 7A1.5 1.5 0 0 0 2 13.5v2A1.5 1.5 0 0 0 3.5 17h6a1.5 1.5 0 0 0 1.5-1.5v-2A1.5 1.5 0 0 0 9.5 12h-6Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span>Library</span>
+              </div>
+              <div class="library-controls">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9"
+                  />
+                </svg>
+              </div>
+            </header>
+            <div class="options">
+              <div class="option">
+                <img src="https://misc.scdn.co/liked-songs/liked-songs-64.png" alt="">
+                <div class="option-text">
+                  <p class="option-heading">Liked Songs</p>
+                  <p class="option-subheading">Playlist * 254 Songs</p>
+                </div>
+              </div>
+              <div class="option">
+                <img src="https://misc.scdn.co/liked-songs/liked-songs-64.png" alt="">
+                <div class="option-text">
+                  <p class="option-heading">Your Episodes</p>
+                  <p class="option-subheading">Saved & downloaded</p>
+                </div>
+              </div>
+              <div class="option">
+                <img class="round" src="https://misc.scdn.co/liked-songs/liked-songs-64.png" alt="">
+                <div class="option-text">
+                  <p class="option-heading">Central Cee</p>
+                  <p class="option-subheading">Artist</p>
+                </div>
+              </div>
+              <div class="option">
+                <img class="round" src="https://misc.scdn.co/liked-songs/liked-songs-64.png" alt="">
+                <div class="option-text">
+                  <p class="option-heading">Alan Walker </p>
+                  <p class="option-subheading">Artist</p>
+                </div>
+              </div>
+              <div class="option">
+                <img src="https://misc.scdn.co/liked-songs/liked-songs-64.png" alt="">
+                <div class="option-text">
+                  <p class="option-heading">Your Top 2023 </p>
+                  <p class="option-subheading">Playlist * 254 Songs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main">Main</div>
+        <div class="info">Info</div>
+      </div>
+      <div class="player">PLAYER</div>
+    </section>
+  </body>
 </html>

@@ -1,6 +1,132 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+html {
+  font-family: sans-serif;
+  font-size: 62.5%;
+}
+
+.app {
+  background-color: #999;
+  display: grid;
+  grid-template-rows: 85% 1fr;
+  row-gap: 4px;
+  height: 100vh;
+  padding: 4px;
+}
+
+.cover {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  column-gap: 4px;
+}
+
+.sidebar {
+  background-color: red;
+  display: grid;
+  grid-template-rows: 18% 1fr;
+  row-gap: 4px;
+  padding: 4px;
+}
+
+.sidenav {
+  background-color: #555;
+  border-radius: 7px;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 8px;
+}
+
+.nav-item {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-item svg {
+  height: 24px;
+  width: 24px;
+}
+
+.library {
+  background-color: #555;
+  border-radius: 7px;
+  padding: 8px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.library-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.library svg {
+  height: 24px;
+  width: 24px;
+}
+
+.options {
+  padding: 8px 0;
+  overflow: hidden;
+}
+
+.option {
+  display: flex;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.option-heading {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.option-subheading {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.option img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.option-text {
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.option-heading {
+  padding-bottom: 4px;
+}
+
+.main {
+  background-color: blue;
+}
+
+.info {
+  background-color: green;
+}
+
+.player {
+  background-color: orangered;
+}
+
+.round {
+    border-radius: 500px;
+}
