@@ -10,7 +10,7 @@ html {
 }
 
 .app {
-  background-color: #999;
+  background-color: #000000;
   display: grid;
   grid-template-rows: 85% 1fr;
   row-gap: 4px;
@@ -25,7 +25,8 @@ html {
 }
 
 .sidebar {
-  background-color: red;
+  background-color: #000000;
+  color: #d4d4d4;
   display: grid;
   grid-template-rows: 18% 1fr;
   row-gap: 4px;
@@ -33,7 +34,7 @@ html {
 }
 
 .sidenav {
-  background-color: #555;
+  background-color: #121212;
   border-radius: 7px;
 }
 
@@ -58,11 +59,11 @@ html {
 }
 
 .library {
-  background-color: #555;
+  background-color: #121212;
   border-radius: 7px;
-  padding: 8px;
+  padding: 12px 8px;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .library-header {
@@ -90,7 +91,7 @@ html {
 
 .option-heading {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 550;
 }
 
 .option-subheading {
@@ -117,6 +118,73 @@ html {
 
 .main {
   background-color: blue;
+  border-radius: 7px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.header-icons {
+  display: flex;
+  gap: 8px;
+}
+.header-icons svg {
+  height: 32px;
+}
+
+.icon-less {
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-greater {
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.greeting {
+  padding: 12px;
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 12px;
+  column-gap: 8px;
+  row-gap: 4px;
+}
+
+.featured-box {
+  background: rgba(158, 255, 1, 0.9);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.featured-img {
+  border-radius: 7px 0 0 7px;
+}
+
+.featured-text {
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .info {
@@ -127,6 +195,25 @@ html {
   background-color: orangered;
 }
 
-.round {
-    border-radius: 500px;
+.round-icon {
+  border-radius: 500px;
+}
+
+.link:link,
+.link:visited {
+  color: white;
+  background-color: black;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 100px;
+}
+
+.link svg {
+  height: 24px;
+  width: 24px;
+}
+
+.link.round {
+  padding: 2px 4px;
 }
