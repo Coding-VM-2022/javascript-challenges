@@ -360,11 +360,105 @@ background-color:#282828;
 }
 
 .player {
-  background-color: lightgrey;
+padding: 16px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 30% 1fr 25%;
+  color: white;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.player-info  img{
+  width: 64px;
+  height: 64px;
+  border-radius: 7px;
+}
+
+.playing-song-info .playing-song-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.playing-song-info .playing-artist-name {
+  font-size: 14px;
+  color:#ccc;
+}
+
+.player svg {
+  width: 24px;
+  height: 24px;
+}
+
+.player-controls {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+}
+
+.controls-icons {
+  width: 300px;
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.player-play-button {
+  height: 40px !important;
+  width: 40px !important;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap:4px;
+}
+
+.slider span {
+  font-size: 12px;
+}
+
+.slider input[type='range'] {
+  width: 100%;
+}
+
+input[type='range'] {
+  /* overflow: hidden; */
+  height:5px;
+  -webkit-appearance: none;
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
+input[type=range]::-webkit-slider-thumb {
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+input[type=range]::-webkit-slider-thumb:hover {
+  height: 11px;
+  width: 11px;
+}
+
+.player-additionals {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: end;
 }
 
 /* HELPER CLASSES */
-
 .round-icon {
   border-radius: 500px;
 }
