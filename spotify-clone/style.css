@@ -117,7 +117,7 @@ html {
 }
 
 .main {
-  background-color: blue;
+  background-color: #121212;
   border-radius: 7px;
 }
 
@@ -158,7 +158,12 @@ html {
 }
 
 .greeting {
-  padding: 12px;
+  padding: 6px 18px ;
+  color: white;
+}
+
+.greeting-text {
+  font-size: 2.4rem;
 }
 
 .featured {
@@ -171,9 +176,11 @@ html {
 }
 
 .featured-box {
-  background: rgba(158, 255, 1, 0.9);
+  background: #171717;
+  color: white;
   display: flex;
   gap: 12px;
+  margin-bottom: 3px;
   align-items: center;
   border-radius: 7px;
 }
@@ -183,16 +190,65 @@ html {
 }
 
 .featured-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
   font-size: 16px;
+  font-weight: 600;
+  padding-right: 12px;
+  cursor: pointer;
+}
+
+.play-logo {
+  height: 48px;
+  display: none;
+  fill: #1ed760;
+}
+
+.featured-box:hover .play-logo {
+  display: inline-block;
+}
+
+.featured-shows-container {
+  padding: 12px;
+  background: #121212;
+  color: white;
+}
+
+.featured-shows {
+  display: flex;
+  align-items: center;
+}
+
+.featured-show {
+  background-color: #171717;
+  padding: 12px;
+}
+
+.featured-show-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+
+.featured-show .show-name {
+  font-size: 15px;
   font-weight: 600;
 }
 
+.featured-show .show-desc {
+  font-size: 12px;
+}
+
+
 .info {
-  background-color: green;
+  background-color: lightgreen;
 }
 
 .player {
-  background-color: orangered;
+  background-color: lightgrey;
 }
 
 .round-icon {
@@ -216,4 +272,9 @@ html {
 
 .link.round {
   padding: 2px 4px;
+}
+
+.heading-secondary {
+  font-size: 24px;
+  margin-bottom: 8px;
 }
