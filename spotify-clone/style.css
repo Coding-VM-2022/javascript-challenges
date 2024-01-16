@@ -482,6 +482,13 @@ input[type=range]::-webkit-slider-thumb:hover {
   padding: 2px 4px;
 }
 
+.link-white:link, 
+.link-white:visited {
+  background-color: white;
+  color: #333;
+  font-weight: 600;
+}
+
 .heading-secondary {
   font-size: 24px;
   margin-bottom: 8px;
